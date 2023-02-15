@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	th:replace="base::layout(~{::section})">
+<head>
+<meta charset="ISO-8859-1">
+
+<title>Email page</title>
+</head>
+<body>
+	<section>
+		<div id="login">
+        <div class="container">
+            <div id="login-row" class="row justify-content-center align-items-center">
+                <div id="login-column" class="col-md-6">
+                    <div id="login-box" class="col-md-12">
+                        <form id="login-form" class="form" action="forgot" method="post">
+                            <h3 class="text-center">Forgot Password</h3>
+                            
+                         <!--  <th:block th:if="${session.msg}">
+                          <p class="text-center fs-4 text-success">[[${session.msg}]]</p>
+                          <th:block th:text="${#session.removeAttribute('msg')}"></th:block>
+                          </th:block> -->
+                            
+                             <div class="form-group mb-3">
+                                <label>Enter Email:</label><br>
+                                <input type="text" name="email"  class="form-control">
+                            </div>
+                            <div class="form-group mb-3">
+                                <label>Enter Phone:</label><br>
+                                <input type="text" name="phone" class="form-control">
+                            </div>
+                           
+                            <div class="container text-center">
+                           <button class="btn btn-primary">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	</section>
+
+</body>
+</html>
