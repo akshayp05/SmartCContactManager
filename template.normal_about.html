@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	th:replace="base::layout(~{::section})">
+<head>
+<meta charset="ISO-8859-1">
+<title>Home page</title>
+</head>
+<body>
+	<section>
+		<div id="login">
+			<div class="container">
+				<div id="login-row"
+					class="row justify-content-center align-items-center">
+					<div id="login-column" class="col-md-6">
+						<div id="login-box" class="col-md-12">
+							<form id="login-form" class="form" th:action="@{/dologin}"
+								method="post">
+								<h3 class="text-center">About</h3>
+
+
+
+								<div class="form-group mb-3">
+									<label for="username">Create a smooth digital lending
+										experience and get deals done faster by giving clients the
+										option to eSign loan contracts and documents, directly from
+										their mobile or desktop devices.</label><br>
+
+								</div>
+
+								<div class="form-group mb-3">
+									<label for="username">Request, send, and receive signed
+										authoritative copies that are immutable and unalterable using
+										secure, compliant eSignatures powered by DocuSign.</label><br>
+
+								</div>
+
+								<div class="form-group mb-3">
+									<label for="username">Stay fully compliant with UCC
+										9-105 mandates for authoritative copies when you store yours
+										in Certified Vault.</label><br>
+
+								</div>
+
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+</body>
+</html>
